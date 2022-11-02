@@ -1,0 +1,116 @@
+/* all site */
+:root {
+    --primary-text-color: #757575;
+    --white-text-color: #fff;
+    --title-text-color: #000000;
+    --accent-color: #2196F3;
+    --button-background: #F5F4FA;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* button */
+
+.button {;
+    background-color: var(--button-background);
+    border: none;
+    padding: 0.5rem 1.5rem; /* Поля вокруг текста */
+    margin-bottom: 0; /* Отступ снизу */ 
+    border-radius: 4px;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+}
+
+.hero .button {;
+    padding: 1rem 1.5rem; /* Поля вокруг текста */
+    margin-bottom: 0; /* Отступ снизу */ 
+}
+
+
+/* header */
+header .list {
+    list-style: none;
+}
+
+/* header logo */
+.logo-web,
+.logo-web:hover,
+.logo-web:focus {
+    color: var(--accent-color);
+}
+
+.logo,
+.logo:hover,
+.logo:focus {
+    color: var(--title-text-color);
+}
+
+/* header nav */
+.nav .link {
+    color: var(--title-text-color);
+}
+
+.nav .link:hover,
+.nav .link:focus {
+    color: var(--accent-color);
+}
+
+.nav .link.current {
+    color: var(--accent-color);
+}
+
+/* header contacts */
+.contact .link {
+    color: var(--primary-text-color);
+}
+
+.contact .link:hover,
+.contact .link:focus {
+    color: var(--accent-color);
+}
+
+/* body */
+section > .list {
+    list-style: none;
+}
+
+.title {
+    color: var(--title-text-color);
+}
+
+.text {
+    color: var(--primary-text-color);
+}
+
+/* body hero */
+/* body features */
+/* body specialization */
+/* body team */
+
+/* footer */
+footer .list {
+    list-style: none;
+}
+
+/* footer logo */
+footer .logo,
+footer .logo:hover,
+footer .logo:focus {
+    color: #ffffff;
+}
+
+/* footer address */
+.location {
+    color: #ffffff;
+}
+
+.email,
+.tel {
+    color: rgb(255,255,255,60);
+}
