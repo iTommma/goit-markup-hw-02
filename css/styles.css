@@ -1,19 +1,15 @@
 /* all site */
 :root {
     --primary-text-color: #757575;
-    --primary-white-color: #fff;
+    --white-text-color: #fff;
     --title-text-color: #000000;
     --accent-color: #2196F3;
     --button-background: #F5F4FA;
-    --hero-letter-spacing: 0.06em;
-    --font-size-14: 14px;
-    --font-size-36: 36px;
-}
 
-body {
-    color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
+    font-size: 14px;
     letter-spacing: 0.03em;
+    --hero-letter-spacing: 0.06em;
 }
 
 a {
@@ -22,9 +18,7 @@ a {
 
 /* button */
 
-.button {
-    font-size: 16px;
-    color: #212121;
+.button {;
     background-color: var(--button-background);
     border: none;
     padding: 0.5rem 1.5rem; /* Поля вокруг текста */
@@ -34,11 +28,11 @@ a {
 
 .button:hover,
 .button:focus {
-    color: var(--primary-white-color);
+    color: var(--white-text-color);
     background-color: var(--accent-color);
 }
 
-.hero .button {
+.hero .button {;
     padding: 1rem 1.5rem; /* Поля вокруг текста */
     margin-bottom: 0; /* Отступ снизу */ 
 }
@@ -68,6 +62,7 @@ footer .logo:focus {
     color: #ffffff;
 }
 
+
 /* header */
 header .list {
     list-style: none;
@@ -77,7 +72,6 @@ header .list {
 /* header nav */
 .nav .link {
     color: var(--title-text-color);
-    font-size: var(--font-size-14);
 }
 
 .nav .link:hover,
@@ -92,7 +86,6 @@ header .list {
 /* header contacts */
 .contact .link {
     color: var(--primary-text-color);
-    font-size: var(--font-size-14);
 }
 
 .contact .link:hover,
@@ -106,16 +99,12 @@ footer .list {
 }
 
 /* footer address */
-.footer-address a {
-    font-size: var(--font-size-14);
-}
-
-.footer-address .location {
+.location {
     color: #ffffff;
 }
 
-.footer-address .email,
-.footer-address .tel {
+.email,
+.tel {
     color: rgb(255,255,255,60);
 }
 
@@ -138,46 +127,17 @@ section > .list {
 .hero .button {
     letter-spacing: var(--hero-letter-spacing);
 }
-
 .hero .title {
     font-size: 44px;
 }
 
 /* body features */
-.features-list .title {
-    font-size: var(--font-size-14);
-    text-transform: uppercase;
-}
-
-.features-list .text {
-    font-size: var(--font-size-14);
-}
-
-
 /* body specialization */
-.specialization .specialization-title {
-    font-size: var(--font-size-36);
-}
 /* body team */
-.team-list .text,
-.team-list .title {
-    font-size: 16px;
-}
-
-.team .team-title {
-    font-size: var(--font-size-36);
-}
 
 /* portfolio.html */
-.portfolio-list .title {
-    font-size: 18px;
-}
-
-.portfolio-list .text {
-    font-size: 16px;
-}
-
 /* portfolio */
 .portfolio .title {
     letter-spacing: var(--hero-letter-spacing);
+
 }
