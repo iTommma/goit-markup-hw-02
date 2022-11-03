@@ -6,6 +6,8 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
 
+  --font-weight-500: 500;
+  --font-weight-700: 700;
   --letter-spacing-006: 0.06em;
   --font-size-14: 14px;
   --font-size-16: 16px;
@@ -21,10 +23,6 @@ body {
   font-size: var(--font-size-16);
   line-height: 1.2;
   letter-spacing: 0.03em;
-}
-
-a {
-  text-decoration: none;
 }
 
 section > .list {
@@ -52,11 +50,12 @@ section > .list {
 
 /* logo +*/
 .logo {
+    text-decoration: none;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
 }
 
 .logo:hover,
@@ -85,11 +84,12 @@ header .list {
 /* header nav */
 .nav .link,
 .contact .link {
+    text-decoration: none;
   color: var(--title-text-color);
   font-size: var(--font-size-14);
   letter-spacing: 0.02em;
   line-height: 1.14;
-  font-weight: 500;
+  font-weight: var(--font-weight-500);
 }
 
 .nav .link:hover,
@@ -124,8 +124,8 @@ footer .list {
 .footer-address .location,
 .footer-address .email,
 .footer-address .tel {
+    text-decoration: none;
   font-style: normal;
-  font-weight: 400;
   color: #ffffff;
   font-size: var(--font-size-14);
   line-height: 1.71;
@@ -154,18 +154,15 @@ footer .list {
 }
 
 .hero .button {
-  font-family: inherit;
-  color: var(--primary-white-color);
   background-color: var(--accent-color);
-
-  font-weight: 700;
+    color: var(--primary-white-color);
+  font-family: inherit;
+  font-weight: var(--font-weight-700);
   font-size: var(--font-size-16);
+  letter-spacing: var(--letter-spacing-006);
   line-height: 1.88;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: var(--letter-spacing-006);
+  cursor: pointer;
 
   padding: 1rem 1.5rem; /* Поля вокруг текста */
   margin-bottom: 0; /* Отступ снизу */
@@ -175,7 +172,7 @@ footer .list {
 .features-list .title {
   font-size: var(--font-size-14);
   line-height: 1.14;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   text-transform: uppercase;
   color: var(--title-text-color);
 }
@@ -192,7 +189,7 @@ footer .list {
 .team .team-title {
   font-size: 36px;
   line-height: 1.16;
-  font-weight: 700;
+  font-weight: var(--font-weight-700);
   text-align: center;
   color: var(--title-text-color);
 }
@@ -206,25 +203,27 @@ footer .list {
 .team-list .text {
   font-size: var(--font-size-16);
   line-height: 1.19;
-  font-weight: 500;
   text-align: center;
-  color: var(--title-text-color);
+  color: var(--primary-text-color);
 }
 
-.team-list .text {
-  font-weight: 400;
-  color: var(--primary-text-color);
+.team-list .title {
+    font-weight: var(--font-weight-500);
+  color: var(--title-text-color);
 }
 
 /* ___ portfolio.html */
 
 /* main Portfolio */
 .list.filter .button {
-  font-weight: 500;
+    font-family: inherit;
+  font-weight: var(--font-weight-500);
   font-size: var(--font-size-16);
   line-height: 1.62;
   text-align: center;
   color: var(--title-text-color);
+
+  cursor: pointer;
 }
 
 .list.filter .button:hover,
@@ -234,7 +233,7 @@ footer .list {
 }
 
 .portfolio-list .title {
-  font-weight: 700;
+  font-weight: var(--font-weight-500);
   font-size: 18px;
   line-height: 2;
   letter-spacing: var(--letter-spacing-006);
@@ -242,7 +241,6 @@ footer .list {
 }
 
 .portfolio-list .text {
-  font-weight: 400;
   font-size: var(--font-size-16);
   line-height: 1.88;
   color: var(--primary-text-color);
