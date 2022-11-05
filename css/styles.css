@@ -19,13 +19,9 @@ body {
 
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-size: var(--font-size-16);
-  line-height: 1.2;
-  letter-spacing: 0.03em;
 }
 
-section > .list {
+.list {
   list-style: none;
 }
 
@@ -48,9 +44,9 @@ section > .list {
   border-radius: 4px;
 }
 
-/* logo +*/
+/* logo */
 .logo {
-    text-decoration: none;
+  text-decoration: none;
   color: #000000;
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -77,14 +73,11 @@ footer .logo:focus {
 }
 
 /* Header */
-header .list {
-  list-style: none;
-}
 
 /* header nav */
-.nav .link,
-.contact .link {
-    text-decoration: none;
+.nav-link,
+.heder-contact {
+  text-decoration: none;
   color: var(--title-text-color);
   font-size: var(--font-size-14);
   letter-spacing: 0.02em;
@@ -92,22 +85,19 @@ header .list {
   font-weight: var(--font-weight-500);
 }
 
-.nav .link:hover,
-.nav .link:focus {
-  color: var(--accent-color);
-}
-
-.nav .link.current {
+.nav-link:hover,
+.navlink:focus,
+.current {
   color: var(--accent-color);
 }
 
 /* header contacts */
-.contact .link {
+.heder-contact {
   color: var(--primary-text-color);
 }
 
-.contact .link:hover,
-.contact .link:focus {
+.heder-contact:hover,
+.heder-contact:focus {
   color: var(--accent-color);
 }
 
@@ -116,24 +106,25 @@ footer {
   background-color: #2f303a;
 }
 
-footer .list {
-  list-style: none;
-}
-
-/*      footer address */
-.footer-address .location,
-.footer-address .email,
-.footer-address .tel {
-    text-decoration: none;
+.footer-address,
+.footer-contact {
+  text-decoration: none;
   font-style: normal;
   color: #ffffff;
   font-size: var(--font-size-14);
   line-height: 1.71;
 }
 
-.footer-address .email,
-.footer-address .tel {
-  color: rgba(255, 255, 255, 60);
+.footer-contact{
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #2f303a;
+}
+
+.footer-address:hover,
+.footer-address:active,
+.footer-contact:hover,
+.footer-contact:active {
+  color: var(--accent-color);
 }
 
 /* ___ index.html */
@@ -143,7 +134,7 @@ footer .list {
   background-color: #2f303a;
 }
 
-.hero .title {
+.hero-title {
   color: var(--primary-white-color);
   letter-spacing: var(--letter-spacing-006);
   font-size: 44px;
@@ -153,9 +144,9 @@ footer .list {
   font-weight: 900;
 }
 
-.hero .button {
+.hero-button {
   background-color: var(--accent-color);
-    color: var(--primary-white-color);
+  color: var(--primary-white-color);
   font-family: inherit;
   font-weight: var(--font-weight-700);
   font-size: var(--font-size-16);
@@ -169,7 +160,7 @@ footer .list {
 }
 
 /* main Features */
-.features-list .title {
+.features-subtitle {
   font-size: var(--font-size-14);
   line-height: 1.14;
   font-weight: var(--font-weight-700);
@@ -177,7 +168,7 @@ footer .list {
   color: var(--title-text-color);
 }
 
-.features-list .text {
+.features-text {
   font-size: var(--font-size-14);
   font-size: 14px;
   line-height: 1.71;
@@ -185,8 +176,8 @@ footer .list {
 }
 
 /* main Specialization & Team */
-.specialization .specialization-title,
-.team .team-title {
+.specialization-title,
+.team-title {
   font-size: 36px;
   line-height: 1.16;
   font-weight: var(--font-weight-700);
@@ -199,24 +190,27 @@ footer .list {
   background-color: #f5f4fa;
 }
 
-.team-list .title,
-.team-list .text {
+.team-name {
+  color: var(--title-text-color);
+  font-weight: var(--font-weight-500);
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team-profession {
+  color: var(--primary-text-color);
   font-size: var(--font-size-16);
   line-height: 1.19;
   text-align: center;
-  color: var(--primary-text-color);
-}
-
-.team-list .title {
-    font-weight: var(--font-weight-500);
-  color: var(--title-text-color);
 }
 
 /* ___ portfolio.html */
 
 /* main Portfolio */
-.list.filter .button {
-    font-family: inherit;
+
+
+.portfolio-filter {
+  font-family: inherit;
   font-weight: var(--font-weight-500);
   font-size: var(--font-size-16);
   line-height: 1.62;
@@ -226,13 +220,13 @@ footer .list {
   cursor: pointer;
 }
 
-.list.filter .button:hover,
-.list.filter .button:focus {
+.portfolio-filter:hover,
+.portfolio-filter:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-.portfolio-list .title {
+.portfolio-title {
   font-weight: var(--font-weight-500);
   font-size: 18px;
   line-height: 2;
@@ -240,8 +234,12 @@ footer .list {
   color: var(--title-text-color);
 }
 
-.portfolio-list .text {
+.portfolio-project {
   font-size: var(--font-size-16);
   line-height: 1.88;
   color: var(--primary-text-color);
 }
+
+/* [lang] {
+  color: tomato !important;
+} */
